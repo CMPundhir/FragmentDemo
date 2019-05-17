@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:textColor="#000"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:hint="clicked text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <fragment
+        android:layout_weight="1"
+        android:id="@+id/fragment"
+        android:name="com.cmpundhir.cm.fragmentdemo.MyFirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:layout_weight="1"
+        android:id="@+id/fragment2"
+        android:name="com.cmpundhir.cm.fragmentdemo.MySecondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:layout_weight="1"
+        android:id="@+id/fragment3"
+        android:name="com.cmpundhir.cm.fragmentdemo.MyThirdFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
